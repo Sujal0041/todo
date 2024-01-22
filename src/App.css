@@ -28,6 +28,15 @@
   color: #61dafb;
 }
 
+.todocontainer{
+  background-color: #61dafb;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
