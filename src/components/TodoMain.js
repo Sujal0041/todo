@@ -13,7 +13,10 @@ const TodoMain = () => {
   return (
     <div className='todocontainer'>
       <TodoformData addTodo={addTodos}/>
-      <Todo />
+      {todos.map((todo, index)=>(
+        <Todo task={todo} key={index} />
+          
+      ))}
     </div>
   )
 }
