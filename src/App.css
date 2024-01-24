@@ -28,13 +28,42 @@
   color: #61dafb;
 }
 
+body{
+  background: #8758ff;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .todocontainer{
-  background-color: #61dafb;
+  background: #1A1A40;
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
-  width: 50%;
-  margin: auto;
+}
+
+.todoform {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todoinput {
+  outline: none;
+  background: none;
+  border: 1px solid #8758ff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: white;
+}
+
+.addtodo {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
 }
 
 @keyframes App-logo-spin {
