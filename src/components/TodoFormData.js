@@ -14,7 +14,6 @@ const TodoFormData = ({addTodo}) => {
     addTodo(value)
     setValue("") // After clicking the button, clear the input field
   };
-
   return (
     <form className='todoform' onSubmit={handlesubmit}>
         <input type='text' className='todoinput'value={value} placeholder='Enter Todo'  onChange={handleInputChange}/>
