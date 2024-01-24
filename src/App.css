@@ -75,12 +75,23 @@ body{
   padding: 0.75rem 1rem;
   border-radius: 5px;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 p{
   color: #fff;
 }
 
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
 
 @keyframes App-logo-spin {
   from {

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Todo = ({task}) => {
+const Todo = ({task, toggleComplete}) => {
   return (
     <div className='Todo'>
-        <p>{task.task}</p>      
+       <p className={`${task.completed ? "completed" : "incompleted"}`} onClick={() => toggleComplete(task.id)}>{task.task}</p>    
     </div>
   )
 }
