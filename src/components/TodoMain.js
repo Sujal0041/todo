@@ -6,10 +6,16 @@ uuidv4()
 const TodoMain = () => {
     const [todos,setTodos] = useState([])
 
-    const addTodos = (todo) =>{
-        setTodos([...todos,{id: uuidv4(),task:todo,completed:false}])
-        console.log(todos)
+    const addTodos = (todo) => {
+        // Check if todo is not empty before adding it to the array
+        if (todo.trim() !== "") {
+            setTodos([...todos, { id: uuidv4(), task: todo, completed: false }])
+            console.log(todos)
+        } else {
+            alert("Please Add a Task")
+        }
     }
+    
 
     const toggleComplete = (id) => {
         setTodos(
@@ -18,7 +24,7 @@ const TodoMain = () => {
           )
         );
       }
-      
+
   return (
     <div className='todocontainer'>
       <TodoformData addTodo={addTodos}/>
